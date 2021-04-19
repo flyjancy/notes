@@ -7,5 +7,5 @@ nav:
     - Verilog on MacOS: tools/verilog_on_mac.md
 
   - About: 
-    - Pastglory: pastglory.md
+    - Pastglory: about/pastglory.md
 theme: readthedocs
