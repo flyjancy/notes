@@ -1,0 +1,10 @@
+site_name: Pastglory Docs
+nav:
+  - Home: index.md
+  - Digital Design and Verification:
+    - Common Cells: digital/common_cells.md
+  - Tools:
+    - Verilog on MacOS: tools/verilog_on_mac.md
+
+  - About: about.md
+theme: readthedocs
