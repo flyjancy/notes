@@ -10,4 +10,4 @@ digital design and verification, deep learning and tools making work better.
 
 GitHub:
 
-https://github.com/pastglory
+[https://github.com/pastglory](https://github.com/pastglory)
