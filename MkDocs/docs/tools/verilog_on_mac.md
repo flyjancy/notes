@@ -3,10 +3,11 @@
 ## 准备
 
 为了在macOS上完成简单的Verilog仿真及综合，首先需要安装以下内容:
-- iverilog
-- Scansion
-- yosys
-- graphviz
+
+* iverilog
+* Scansion
+* yosys
+* graphviz
 
 其中iverilog，yosys和graphviz可以通过Homebrew安装，Scansion可以在[其官网](http://www.logicpoet.com/scansion/)下载并安装。
 
