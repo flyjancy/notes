@@ -1,4 +1,4 @@
-# Notes
+# notes
 
 My notes built with MkDocs using a theme provided by Read the Docs.
 
