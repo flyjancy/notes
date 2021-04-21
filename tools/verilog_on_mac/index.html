@@ -64,6 +64,16 @@
                 <p class="caption"><span class="caption-text">Tools</span></p>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Verilog on MacOS</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">准备</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">仿真流程</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">综合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">总结</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">About</span></p>
@@ -107,7 +117,57 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="verilog-on-macos">Verilog on MacOS</h1>
+<h2 id="_1">准备</h2>
+<p>为了在macOS上完成简单的Verilog仿真及综合，首先需要安装以下内容:
+- iverilog
+- Scansion
+- yosys
+- graphviz</p>
+<p>其中iverilog，yosys和graphviz可以通过Homebrew安装，Scansion可以在<a href="http://www.logicpoet.com/scansion/">其官网</a>下载并安装。</p>
+<h2 id="_2">仿真流程</h2>
+<p>iverilog和Scansion安装完成之后，通过Makefile脚本化仿真流程。
+Makefile示例脚本如下:</p>
+<pre><code>RC=&quot;Adder32_1&quot;
+TB =&quot;Adder32_1_tb&quot;
+all:
+    iverilog -o wave $(SRC).v $(TB).v
+    vvp -n wave
+    open -a Scansion wave.vcd
+</code></pre>
+<p>为了生成波形，需要在testbench中添加以下代码:</p>
+<pre><code>/*iverilog */
+initial
+begin            
+    $dumpfile(&quot;wave.vcd&quot;);        //生成的vcd文件名称
+    $dumpvars(0, led_demo_tb);    //tb模块名称
+end
+/*iverilog */
+</code></pre>
+<p>如果不加这几行iverilog编译器专用的语句，将无法生成wave.vcd波形。</p>
+<p>完成后，在工程目录下输入<code>make</code>即可打开Scansion界面，之后便可以添加信号查看波形了。</p>
+<p>注：在终端输入<code>iverilog</code>回车，可以看到常用参数使用方法的简单介绍。另外，iverilog还可以把用Verilog HDL编写的.v文件转换成VHDL语言编写的.vhd文件，使用命令<code>iverilog -tvhdl -o test.vhd test.v</code></p>
+<h2 id="_3">综合</h2>
+<p>首先编写以下综合命令:</p>
+<pre><code># read design
+read_verilog counter.v
+hierarchy -top counter
+# high-level synthesis
+proc; opt; fsm; opt; memory; opt; #techmap; opt;
+write_verilog synth.v
+</code></pre>
+<p>将上述命令保存为show_rtl.ys文件，在终端下执行命令完成综合。</p>
+<pre><code>yosys show_rtl.ys
+</code></pre>
+<p>综合完成后会生成synth.v文件，这是综合后的网表。</p>
+<p>生成dot文件:</p>
+<pre><code>yosys -p &quot;prep; show -stretch -prefix counter -format dot&quot; counter.v
+</code></pre>
+<p>生成png图片:</p>
+<pre><code>dot counter.dot -T png -o counter.png
+</code></pre>
+<h2 id="_4">总结</h2>
+<p>基于以上相关工具，便可以在macOS上写一点简单的verilog，用于验证一些小的idea还是非常方便的。</p>
               
             </div>
           </div>
