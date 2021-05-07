@@ -3,7 +3,7 @@ nav:
   - Home: index.md
   - Digital Design and Verification:
     - Common Cells: digital/common_cells.md
-    - Fifo: digital/fifo.md
+    - FIFO: digital/fifo.md
   - Deep Learning:
     - PyTorch Notes: dl/torch.md
   - Tools:
