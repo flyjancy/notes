@@ -3,7 +3,7 @@
 ## Introduction
 
 This site contains my notes in the fields including but not limited to
-digital design and verification, deep learning and tools making work better.
+digital design and verification, deep learning and tools make work better.
 
 
 ## Links

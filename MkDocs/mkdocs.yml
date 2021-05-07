@@ -3,8 +3,9 @@ nav:
   - Home: index.md
   - Digital Design and Verification:
     - Common Cells: digital/common_cells.md
+    - Fifo: digital/fifo.md
   - Deep Learning:
-    - PyTorch: dl/torch.md
+    - PyTorch Notes: dl/torch.md
   - Tools:
     - Verilog on MacOS: tools/verilog_on_mac.md
 
