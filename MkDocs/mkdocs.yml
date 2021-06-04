@@ -6,6 +6,7 @@ nav:
     - Common Cells: digital/common_cells.md
     - FIFO: digital/fifo.md
   - Deep Learning:
+    - Python Notes: dl/python.md
     - PyTorch Notes: dl/torch.md
   - Tools:
     - Verilog on MacOS: tools/verilog_on_mac.md
