@@ -25,6 +25,8 @@ all:
 	open -a Scansion wave.vcd
 ```
 
+当文件较多时，可以将所有文件名写在filelist.f中，使用-f命令编译
+
 为了生成波形，需要在testbench中添加以下代码:
 
 ```
