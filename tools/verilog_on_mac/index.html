@@ -139,6 +139,7 @@ all:
     vvp -n wave
     open -a Scansion wave.vcd
 </code></pre>
+<p>当文件较多时，可以将所有文件名写在filelist.f中，使用-f命令编译</p>
 <p>为了生成波形，需要在testbench中添加以下代码:</p>
 <pre><code>/*iverilog */
 initial
