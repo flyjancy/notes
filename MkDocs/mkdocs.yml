@@ -2,6 +2,7 @@ site_name: Pastglory Docs
 nav:
   - Home: index.md
   - Digital Design and Verification:
+    - From SPEC to RTL: digital/spec2rtl.md
     - Common Cells: digital/common_cells.md
     - FIFO: digital/fifo.md
   - Deep Learning:
