@@ -53,6 +53,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Digital Design and Verification</span></p>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../digital/spec2rtl/">From SPEC to RTL</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../digital/common_cells/">Common Cells</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../digital/fifo/">FIFO</a>
@@ -60,6 +62,8 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Deep Learning</span></p>
                 <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">Python Notes</a>
+                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">PyTorch Notes</a>
     <ul class="current">
     </ul>
@@ -112,6 +116,24 @@
             <div class="section">
               
                 <h1 id="pytorch-notes">PyTorch Notes</h1>
+<p>This jupyter notebook contains my code when studying PyTorch.</p>
+<pre><code class="language-python"># torch edition 
+import torch
+print(torch.__version__)
+</code></pre>
+<pre><code>1.8.1+cu111
+</code></pre>
+<pre><code class="language-python"># cuda 
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
+print(torch.cuda.get_device_name())
+print(torch.cuda.get_device_capability(0))
+</code></pre>
+<pre><code>True
+1
+GeForce GTX 1060
+(6, 1)
+</code></pre>
               
             </div>
           </div>
@@ -122,7 +144,7 @@
         <a href="../../tools/verilog_on_mac/" class="btn btn-neutral float-right" title="Verilog on MacOS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../digital/fifo/" class="btn btn-neutral" title="FIFO"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../python/" class="btn btn-neutral" title="Python Notes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -148,7 +170,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../digital/fifo/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../../tools/verilog_on_mac/" style="color: #fcfcfc">Next &raquo;</a></span>
