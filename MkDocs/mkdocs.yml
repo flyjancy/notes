@@ -10,6 +10,7 @@ nav:
     - PyTorch Notes: dl/torch.md
   - Tools:
     - Verilog on MacOS: tools/verilog_on_mac.md
+    - Git Command: tools/git_command.md
 
   - About: 
     - Pastglory: about/pastglory.md
