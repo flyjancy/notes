@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Common Cells - Pastglory Docs</title>
+  <title>Git Command - Pastglory Docs</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Common Cells";
-    var mkdocs_page_input_path = "digital/common_cells.md";
+    var mkdocs_page_name = "Git Command";
+    var mkdocs_page_input_path = "tools/git_command.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -52,14 +52,12 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Digital Design and Verification</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../spec2rtl/">From SPEC to RTL</a>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../digital/spec2rtl/">From SPEC to RTL</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Common Cells</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../digital/common_cells/">Common Cells</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../fifo/">FIFO</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../digital/fifo/">FIFO</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Deep Learning</span></p>
@@ -70,10 +68,18 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Tools</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tools/verilog_on_mac/">Verilog on MacOS</a>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../verilog_on_mac/">Verilog on MacOS</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tools/git_command/">Git Command</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Git Command</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">基础流程</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">版本控制</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">分支开发</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">About</span></p>
@@ -102,11 +108,11 @@
     
       
         
-          <li>Digital Design and Verification &raquo;</li>
+          <li>Tools &raquo;</li>
         
       
     
-    <li>Common Cells</li>
+    <li>Git Command</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -117,7 +123,44 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="common-cells">Common Cells</h1>
+                <h1 id="git">常用的Git命令</h1>
+<h2 id="_1">基础流程</h2>
+<p>创建git仓库</p>
+<p><code>git init</code></p>
+<p>克隆一个仓库</p>
+<p><code>git clone &lt;path&gt;</code></p>
+<p>添加改动到stage</p>
+<p><code>git add *</code></p>
+<p>提交改动到HEAD</p>
+<p><code>git commit -m "commit message"</code></p>
+<p>将改动推送到远端仓库的main分支，main可以替换为其他分支名称</p>
+<p><code>git push origin main</code></p>
+<p>更新本地仓库至最新改动</p>
+<p><code>git pull</code></p>
+<h2 id="_2">版本控制</h2>
+<p>获取提交ID</p>
+<p><code>git log</code></p>
+<p>给提交ID创建标签(example id: 1b2e1d63ff)</p>
+<p><code>git tag 1.0 1b2e1d63ff</code></p>
+<p>查看命令历史</p>
+<p><code>git reflog</code></p>
+<p>回退到最新的改动</p>
+<p><code>git reset --hard HEAD</code></p>
+<p>回退到最新改动的上一次改动</p>
+<p><code>git reset --hard HEAD^</code></p>
+<p>回退到某一次改动</p>
+<p><code>git reset --hard &lt;commit_id&gt;</code></p>
+<h2 id="_3">分支开发</h2>
+<p>创建分支</p>
+<p><code>git branch &lt;branch_name&gt;</code></p>
+<p>查看当前分支</p>
+<p><code>git branch</code></p>
+<p>切换到某一个分支</p>
+<p><code>git switch -c &lt;branch_name&gt;</code></p>
+<p>合并某分支到当前分支</p>
+<p><code>git merge &lt;branch_name&gt;</code></p>
+<p>删除分支</p>
+<p><code>git branch -d &lt;branch_name&gt;</code></p>
               
             </div>
           </div>
@@ -125,10 +168,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../fifo/" class="btn btn-neutral float-right" title="FIFO">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../about/pastglory/" class="btn btn-neutral float-right" title="Pastglory">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../spec2rtl/" class="btn btn-neutral" title="From SPEC to RTL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../verilog_on_mac/" class="btn btn-neutral" title="Verilog on MacOS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -154,10 +197,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../spec2rtl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../verilog_on_mac/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../fifo/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../about/pastglory/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
