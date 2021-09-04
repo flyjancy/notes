@@ -79,6 +79,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../git_command/">Git常用命令</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gitbook/">使用GitBook写作</a>
+                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">杂谈</span></p>
                 <ul>
@@ -128,16 +130,16 @@
               
                 <h1 id="verilog-on-macos">Verilog on MacOS</h1>
 <h2 id="_1">准备</h2>
-<p>为了在macOS上完成简单的Verilog仿真及综合，首先需要安装以下内容:</p>
+<p>为了在macOS上完成简单的Verilog仿真及综合, 首先需要安装以下内容:</p>
 <ul>
 <li>iverilog</li>
 <li>Scansion</li>
 <li>yosys</li>
 <li>graphviz</li>
 </ul>
-<p>其中iverilog，yosys和graphviz可以通过Homebrew安装，Scansion可以在<a href="http://www.logicpoet.com/scansion/">其官网</a>下载并安装。</p>
+<p>其中iverilog, yosys和graphviz可以通过Homebrew安装, Scansion可以在<a href="http://www.logicpoet.com/scansion/">其官网</a>下载并安装. </p>
 <h2 id="_2">仿真流程</h2>
-<p>iverilog和Scansion安装完成之后，通过Makefile脚本化仿真流程。
+<p>iverilog和Scansion安装完成之后, 通过Makefile脚本化仿真流程. 
 Makefile示例脚本如下:</p>
 <pre><code>RC=&quot;Adder32_1&quot;
 TB =&quot;Adder32_1_tb&quot;
@@ -146,8 +148,8 @@ all:
     vvp -n wave
     open -a Scansion wave.vcd
 </code></pre>
-<p>当文件较多时，可以将所有文件名写在filelist.f中，使用-f命令编译</p>
-<p>为了生成波形，需要在testbench中添加以下代码:</p>
+<p>当文件较多时, 可以将所有文件名写在filelist.f中, 使用-f命令编译</p>
+<p>为了生成波形, 需要在testbench中添加以下代码:</p>
 <pre><code>/*iverilog */
 initial
 begin            
@@ -156,9 +158,9 @@ begin
 end
 /*iverilog */
 </code></pre>
-<p>如果不加这几行iverilog编译器专用的语句，将无法生成wave.vcd波形。</p>
-<p>完成后，在工程目录下输入<code>make</code>即可打开Scansion界面，之后便可以添加信号查看波形了。</p>
-<p>注：在终端输入<code>iverilog</code>回车，可以看到常用参数使用方法的简单介绍。另外，iverilog还可以把用Verilog HDL编写的.v文件转换成VHDL语言编写的.vhd文件，使用命令<code>iverilog -tvhdl -o test.vhd test.v</code></p>
+<p>如果不加这几行iverilog编译器专用的语句, 将无法生成wave.vcd波形. </p>
+<p>完成后, 在工程目录下输入<code>make</code>即可打开Scansion界面, 之后便可以添加信号查看波形了. </p>
+<p>注：在终端输入<code>iverilog</code>回车, 可以看到常用参数使用方法的简单介绍. 另外, iverilog还可以把用Verilog HDL编写的.v文件转换成VHDL语言编写的.vhd文件, 使用命令<code>iverilog -tvhdl -o test.vhd test.v</code></p>
 <h2 id="_3">综合</h2>
 <p>首先编写以下综合命令:</p>
 <pre><code># read design
@@ -168,10 +170,10 @@ hierarchy -top counter
 proc; opt; fsm; opt; memory; opt; #techmap; opt;
 write_verilog synth.v
 </code></pre>
-<p>将上述命令保存为show_rtl.ys文件，在终端下执行命令完成综合。</p>
+<p>将上述命令保存为show_rtl.ys文件, 在终端下执行命令完成综合. </p>
 <pre><code>yosys show_rtl.ys
 </code></pre>
-<p>综合完成后会生成synth.v文件，这是综合后的网表。</p>
+<p>综合完成后会生成synth.v文件, 这是综合后的网表. </p>
 <p>生成dot文件:</p>
 <pre><code>yosys -p &quot;prep; show -stretch -prefix counter -format dot&quot; counter.v
 </code></pre>
@@ -179,7 +181,7 @@ write_verilog synth.v
 <pre><code>dot counter.dot -T png -o counter.png
 </code></pre>
 <h2 id="_4">总结</h2>
-<p>基于以上相关工具，便可以在macOS上写一点简单的verilog，用于验证一些小的idea还是非常方便的。</p>
+<p>基于以上相关工具, 便可以在macOS上写一点简单的verilog, 用于验证一些小的idea还是非常方便的. </p>
               
             </div>
           </div>
