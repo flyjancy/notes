@@ -56,7 +56,7 @@
 
 创建分支
 
-`git branch <branch_name>`
+`git checkout -b <branch_name>`
 
 查看当前分支
 
