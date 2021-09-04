@@ -1,6 +1,6 @@
 # Python Notes
 
-## Basic
+## 基础语法
 
 ```python
 # input and output
@@ -341,7 +341,7 @@ Python的`Iterator`对象表示的是一个数据流，`Iterator`对象可以被
 `Iterator`甚至可以表示一个无限大的数据流，例如全体自然数。而使用`list`是永远不可能存储全体自然数的。
 Python中的`for`循环本质上就是通过不断调用`next()`函数实现的。
 
-## OOP
+## 面向对象入门
 
 面向对象中最重要的概念就是class和instance，instance是根据class创建出来的对象，每个对象拥有相同的方法，但各自的数据可能不同。
 下面的例子里，括号内表示该类是从哪个类继承下来的，如果没有合适的继承类，就使用`object`类，定义好之后就可以创建实例。

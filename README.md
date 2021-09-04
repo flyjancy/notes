@@ -1,7 +1,10 @@
-# notes
+# pastglory notes
 
-My notes built with MkDocs using a theme provided by Read the Docs.
+本人工作生活相关的各种记录, 基于MkDocs搭建, 使用[Read the Docs](https://readthedocs.org)主题.
 
-Build and publish to github pages:
+生成文档并发布到GitHub Pages:
 
-`mkdocs gh-deploy --clean`
+```
+cd MkDocs
+mkdocs gh-deploy --clean
+```

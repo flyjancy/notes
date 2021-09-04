@@ -1,17 +1,16 @@
 site_name: Pastglory Docs
 nav:
-  - Home: index.md
-  - Digital Design and Verification:
-    - From SPEC to RTL: digital/spec2rtl.md
-    - Common Cells: digital/common_cells.md
-    - FIFO: digital/fifo.md
-  - Deep Learning:
-    - Python Notes: dl/python.md
-    - PyTorch Notes: dl/torch.md
-  - Tools:
-    - Verilog on MacOS: tools/verilog_on_mac.md
-    - Git Command: tools/git_command.md
-
-  - About: 
+  - 主页: index.md
+  - 数字设计与验证:
+    - 通用模块: digital/common_cells.md
+  - 程序设计与算法:
+    - Python笔记: pa/python.md
+    - PyTorch笔记: pa/torch.md
+  - 工具:
+    - Verilog on macOS: tools/verilog_on_mac.md
+    - Git常用命令: tools/git_command.md
+  - 杂谈:
+    - 如何正确提问: talk/ask_question.md 
+  - 关于: 
     - Pastglory: about/pastglory.md
 theme: readthedocs

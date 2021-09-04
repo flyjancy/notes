@@ -1,13 +1,15 @@
 # Welcome to Pastglory Docs
 
-## Introduction
+## 简介
 
-This site contains my notes in the fields including but not limited to
-digital design and verification, deep learning and tools make work better.
+Pastglory Docs主要包含我的个人笔记, 涉及领域包括但不限于数字设计与验证, 程序设计与算法, 常用工具的使用. 同时也收录一些我认为很有用的talk内容.
 
-
-## Links
+## 相关链接
 
 GitHub:
 
 [https://github.com/pastglory](https://github.com/pastglory)
+
+知乎:
+
+[人生状态机](https://www.zhihu.com/people/range98)
