@@ -53,20 +53,16 @@
                 </ul>
                 <p class="caption"><span class="caption-text">数字设计与验证</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../digital/spec2rtl/">从SPEC到RTL</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../digital/common_cells/">通用模块</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../digital/fifo/">FIFO</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">程序设计与算法</span></p>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Python笔记</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#basic">Basic</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_1">基础语法</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#oop">OOP</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">面向对象入门</a>
     </li>
     </ul>
                     </li>
@@ -127,7 +123,7 @@
             <div class="section">
               
                 <h1 id="python-notes">Python Notes</h1>
-<h2 id="basic">Basic</h2>
+<h2 id="_1">基础语法</h2>
 <pre><code class="language-python"># input and output
 name = input()
 print(name)
@@ -381,7 +377,7 @@ for n in fib(6):
 Python的<code>Iterator</code>对象表示的是一个数据流，<code>Iterator</code>对象可以被<code>next()</code>函数调用并不断返回下一个数据，直到没有数据时抛出<code>StopIteration</code>错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过<code>next()</code>函数实现按需计算下一个数据，所以<code>Iterator</code>的计算是惰性的，只有在需要返回下一个数据时它才会计算。
 <code>Iterator</code>甚至可以表示一个无限大的数据流，例如全体自然数。而使用<code>list</code>是永远不可能存储全体自然数的。
 Python中的<code>for</code>循环本质上就是通过不断调用<code>next()</code>函数实现的。</p>
-<h2 id="oop">OOP</h2>
+<h2 id="_2">面向对象入门</h2>
 <p>面向对象中最重要的概念就是class和instance，instance是根据class创建出来的对象，每个对象拥有相同的方法，但各自的数据可能不同。
 下面的例子里，括号内表示该类是从哪个类继承下来的，如果没有合适的继承类，就使用<code>object</code>类，定义好之后就可以创建实例。
 由于类起到模板的作用，因此创建实例时可以通过定义一个特殊的<code>__init__</code>方法，把一些必须绑定的属性强制填写进去。
@@ -440,7 +436,7 @@ AttributeError: 'Student1' object has no attribute '__name'
         <a href="../torch/" class="btn btn-neutral float-right" title="PyTorch笔记">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../digital/fifo/" class="btn btn-neutral" title="FIFO"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../digital/common_cells/" class="btn btn-neutral" title="通用模块"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -466,7 +462,7 @@ AttributeError: 'Student1' object has no attribute '__name'
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../digital/fifo/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../digital/common_cells/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../torch/" style="color: #fcfcfc">Next &raquo;</a></span>
