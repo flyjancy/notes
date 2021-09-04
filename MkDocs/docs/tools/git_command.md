@@ -18,7 +18,7 @@
 
 `git commit -m "commit message"`
 
-将改动推送到远端仓库的main分支，main可以替换为其他分支名称
+将改动推送到远端仓库的main分支, main可以替换为其他分支名称
 
 `git push origin main`
 

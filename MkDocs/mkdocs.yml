@@ -9,6 +9,7 @@ nav:
   - 工具:
     - Verilog on macOS: tools/verilog_on_mac.md
     - Git常用命令: tools/git_command.md
+    - 使用GitBook写作: tools/gitbook.md
   - 杂谈:
     - 如何正确提问: talk/ask_question.md 
   - 关于: 
