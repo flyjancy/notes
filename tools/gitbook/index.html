@@ -77,6 +77,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#github-pages">使用 GitHub Pages 托管</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">使用插件</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -170,6 +172,30 @@
 </ol>
 <p>需要注意的是, 在对 git 分支管理不够熟悉的时候, 一定要多使用 <code>git status</code> 观察当前的 stage 内容, 以免造成不必要的损失. 为了隐私考虑, 第7步也可以不 push, 仅仅在本地管理源代码. 
 同时为了方便开发, 还需要实现简单的脚本, 用于快速推送.</p>
+<h2 id="_2">使用插件</h2>
+<p>为了美化 GitBook, 难免会使用各式各样的插件, 经过尝试学习了一种可行的方法, 记录于此.</p>
+<p>在上一节的步骤 4 以后, 在根目录下添加 <code>book.json</code> 文件 </p>
+<p>按照模版格式编辑(现在我用的插件如下)</p>
+<pre><code>{
+    &quot;plugins&quot;: [
+        &quot;callouts&quot;,
+        &quot;intopic-toc&quot;,
+        &quot;page-footer-ex&quot;,
+        &quot;theme-comscore&quot;,
+        &quot;-sharing&quot;
+    ],
+    &quot;title&quot;: &quot;测试&quot;,
+    &quot;pluginsConfig&quot;: {
+        &quot;page-footer-ex&quot;: {
+            &quot;copyright&quot;: &quot;By lfr&quot;,
+            &quot;markdown&quot;: false,
+            &quot;update_label&quot;: &quot;此页面修订于&quot;,
+            &quot;update_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;
+        }
+    }
+}
+</code></pre>
+<p>之后再 build 即可.</p>
               
             </div>
           </div>
