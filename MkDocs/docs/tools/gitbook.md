@@ -56,3 +56,34 @@
 
 需要注意的是, 在对 git 分支管理不够熟悉的时候, 一定要多使用 `git status` 观察当前的 stage 内容, 以免造成不必要的损失. 为了隐私考虑, 第7步也可以不 push, 仅仅在本地管理源代码. 
 同时为了方便开发, 还需要实现简单的脚本, 用于快速推送.
+
+## 使用插件
+
+为了美化 GitBook, 难免会使用各式各样的插件, 经过尝试学习了一种可行的方法, 记录于此.
+
+在上一节的步骤 4 以后, 在根目录下添加 `book.json` 文件 
+
+按照模版格式编辑(现在我用的插件如下)
+
+```
+{
+    "plugins": [
+        "callouts",
+        "intopic-toc",
+        "page-footer-ex",
+        "theme-comscore",
+        "-sharing"
+    ],
+    "title": "测试",
+    "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "By lfr",
+            "markdown": false,
+            "update_label": "此页面修订于",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
+```
+
+之后再 build 即可.
