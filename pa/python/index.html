@@ -126,18 +126,18 @@
               
                 <h1 id="python-notes">Python Notes</h1>
 <h2 id="_1">基础语法</h2>
-<pre><code class="language-python"># input and output
-name = input()
-print(name)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># input and output</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>aaa
 aaa
 </code></pre>
-<pre><code class="language-python"># logic 
-print(True and False)
-print(True or False)
-print(not True)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># logic </span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>False
 True
 False
@@ -145,85 +145,85 @@ False
 <p><code>str()</code>返回一个对象的string格式
 <code>len()</code>计算一个string包含多少个字符
 <code>int()</code>返回一个对象的整数格式</p>
-<pre><code class="language-python">a = 77
-b = str(a)
-c = int(b)
-print(len(b))
-print(a == c)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">77</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>2
 True
 </code></pre>
 <p><code>list</code>是Python内置的一种数据类型, 是一种有序的集合, 可以随时添加或删除元素</p>
-<pre><code class="language-python">names = ['a', 'b', 'c']
-print(names)
-print(names[0])
-print(names[1])
-print(names[2])
-print(names[-1]) # get the last
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># get the last</span>
+</code></pre></div>
 <pre><code>['a', 'b', 'c']
 a
 b
 c
 c
 </code></pre>
-<pre><code class="language-python"># use pop() or pop(i) to delete
-# pop() delete the last
-names.pop()
-print(names)
-# use append() or insert(i, str) to add
-# append() add the last
-names.append('c')
-print(names)
-names.insert(1, 'd')
-print(names)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># use pop() or pop(i) to delete</span>
+<span class="c1"># pop() delete the last</span>
+<span class="n">names</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="c1"># use append() or insert(i, str) to add</span>
+<span class="c1"># append() add the last</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>['a', 'b']
 ['a', 'b', 'c']
 ['a', 'd', 'b', 'c']
 </code></pre>
 <p><code>tuple</code>是另一种有序列表, 可以理解为初始化后不可修改的<code>list</code></p>
-<pre><code class="language-python">t0 = (1, 2)
-t_empty = ()
-# if tuple only contains one element, use ','
-t1 = (1)
-t2 = (1,)
-print(t0)
-print(t_empty)
-print(t1)
-print(t2)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">t0</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">t_empty</span> <span class="o">=</span> <span class="p">()</span>
+<span class="c1"># if tuple only contains one element, use &#39;,&#39;</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t_empty</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>(1, 2)
 ()
 1
 (1,)
 </code></pre>
 <p>条件判断和循环, 注意python用缩进确定代码块的规定</p>
-<pre><code class="language-python">age = 20
-if age &gt; 18:
-    print('adult')
-elif age &gt;= 6:
-    print('teenager')
-else:
-    print('kid')
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adult&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;teenager&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kid&#39;</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>adult
 </code></pre>
-<pre><code class="language-python">sum1 = 0
-for i in range(100):
-    sum1 = sum1 + i
-print(sum1)
+<div class="highlight"><pre><span></span><code><span class="n">sum1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">sum1</span> <span class="o">=</span> <span class="n">sum1</span> <span class="o">+</span> <span class="n">i</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum1</span><span class="p">)</span>
 
-sum2 = 0
-n = 99
-while n &gt; 0:
-    sum2 = sum2 + n
-    n = n - 1
-    if n == 50:
-        break
-print(sum2)
-</code></pre>
+<span class="n">sum2</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">99</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">sum2</span> <span class="o">=</span> <span class="n">sum2</span> <span class="o">+</span> <span class="n">n</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">50</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum2</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>4950
 3675
 </code></pre>
@@ -232,14 +232,14 @@ print(sum2)
 用<code>get(key)</code>方法获得某key对应的value
 用<code>pop(key)</code>方法删除一个key及其对应的value
 用赋值的方法直接将key-value对放入dict</p>
-<pre><code class="language-python">d = {'Micheal': 95, 'Bob': 75, 'Tracy': 85}
-print(d['Micheal'])
-if 'Micheal' in d:
-    print(True)
-print(d.get('Bob'))
-d['Fancy'] = 100
-print(d)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Micheal&#39;</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span> <span class="s1">&#39;Tracy&#39;</span><span class="p">:</span> <span class="mi">85</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Micheal&#39;</span><span class="p">])</span>
+<span class="k">if</span> <span class="s1">&#39;Micheal&#39;</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">))</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">&#39;Fancy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>95
 True
 75
@@ -247,11 +247,11 @@ True
 </code></pre>
 <p>Python中的函数可以在交互式命令行中通过<code>help(function_name)</code>查看用法
 调用函数和C/C++中无异, 注意一些常见的数据类型转换函数</p>
-<pre><code class="language-python">print(int('123'))
-print(str(1.23))
-print(bool(1))
-print(bool(''))
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">1.23</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+</code></pre></div>
 <pre><code>123
 1.23
 True
@@ -260,28 +260,28 @@ False
 <p>Python中使用<code>def</code>语句定义函数, 返回值用<code>return</code>语句返回. 
 假设如下例定义了一个函数, 如果该函数保存为了一个func.py文件, 在另一个.py文件中要调用my_function函数则需要语句<code>from func import my_function</code>来导入<code>my_function()</code>函数. 
 空函数可以用pass语句, pass可以用作占位符, 在没想好怎么写函数代码时可以先放一个pass让代码跑起来. </p>
-<pre><code class="language-python">def my_function(x):
-    if (x &gt;= 0):
-        return True
-    else:
-        return False
-my_function(1)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+<span class="n">my_function</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>True
 </code></pre>
 <p>Python的函数返回值是有多个的情况下实际上是返回了一个tuple, 而多个变量可以同时接收一个tuple, 按位置赋对应的值, 写起来很方便. </p>
-<pre><code class="language-python">import math
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 
-def move(x, y, step, angle = 0):
-    nx = x + step * math.cos(angle)
-    ny = y - step * math.sin(angle)
-    return nx, ny
+<span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">angle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">step</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">step</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">nx</span><span class="p">,</span> <span class="n">ny</span>
 
-x, y = move(100, 100, 60, math.pi/6)
-print(x, y)
-r = move(100, 100, 60, math.pi/6)
-print(r)
-</code></pre>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">move</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">move</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>151.96152422706632 70.0
 (151.96152422706632, 70.0)
 </code></pre>
@@ -291,13 +291,13 @@ print(r)
 <p>Python中的索引操作和Matlab类似
 取一个list或tuple中下标a到b的元素可以用<code>L[0:3]</code>, 表示从索引0开始取直到索引3, 但不包括索引3. 如果第一个索引是0, 还可以省略. 
 用负号表示倒数. </p>
-<pre><code class="language-python">L = list(range(50))
-print(L)
-print(L[0:15])
-print(L[1:15])
-print(L[:15])
-print(L[15:])
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">L</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">15</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">15</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="mi">15</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">15</span><span class="p">:])</span>
+</code></pre></div>
 <pre><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
@@ -308,9 +308,9 @@ print(L[15:])
 通过列表生成式可以写出非常简洁的代码, 在列表后用for和if高效地生成列表. 
 需要注意的是, 跟在for之后的if是一个筛选条件, 不能带else
 在for之前的if则是一个判断条件, 需要加上else以计算出一个结果</p>
-<pre><code class="language-python">print([x * x for x in range(1, 11)])
-print([x * x for x in range(1, 11) if x % 2 == 1])
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">([</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">([</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
 <pre><code>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 [1, 9, 25, 49, 81]
 </code></pre>
@@ -318,12 +318,12 @@ print([x * x for x in range(1, 11) if x % 2 == 1])
 有两种方法创建一个generator：
 1. 把一个列表生成式的<code>[]</code>改为<code>()</code>
 2. 函数实现</p>
-<pre><code class="language-python"># 创建了一个generator后, 基本上永远不会调用next(), 而是通过for循环来迭代
-g = (x * x for x in range(10))
-print(g)
-for n in g:
-    print(n)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># 创建了一个generator后, 基本上永远不会调用next(), 而是通过for循环来迭代</span>
+<span class="n">g</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">g</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>&lt;generator object &lt;genexpr&gt; at 0x7fb88b6ed7b0&gt;
 0
 1
@@ -336,15 +336,15 @@ for n in g:
 64
 81
 </code></pre>
-<pre><code class="language-python">def fib(max):
-    n, a, b = 0, 0, 1
-    while n &lt; max:
-        print(b)
-        a, b, = b, a + b
-        n = n + 1
-    return 'done'
-print(fib(6))
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="s1">&#39;done&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+</code></pre></div>
 <pre><code>1
 1
 2
@@ -355,17 +355,17 @@ done
 </code></pre>
 <p>该函数描述了斐波拉契数列的推算规则, 要将fib函数变成generator, 只需要把<code>print (b)</code>改成<code>yield b</code>就可以了. 
 此时fib不是普通函数而是generator. 在执行过程中遇到<code>yield</code>就中断, 下次又从该处继续执行. 同样地, 把函数改成generator后, 我们基本上从来不会用next()来获取下一个返回值, 而是直接使用for循环来迭代. </p>
-<pre><code class="language-python">def fib(max):
-    n, a, b = 0, 0, 1
-    while n &lt; max:
-        yield b
-        a, b, = b, a + b
-        n = n + 1
-    return 'done'
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="nb">max</span><span class="p">):</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">b</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="s1">&#39;done&#39;</span>
 
-for n in fib(6):
-    print(n)
-</code></pre>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>1
 1
 2
@@ -385,30 +385,30 @@ Python中的<code>for</code>循环本质上就是通过不断调用<code>next()<
 由于类起到模板的作用, 因此创建实例时可以通过定义一个特殊的<code>__init__</code>方法, 把一些必须绑定的属性强制填写进去. 
 <code>__init__</code>方法的第一个参数永远是<code>self</code>, <code>self</code>指向创建的实例本身, 在<code>__init__</code>内部就可以把各种属性绑定到实力本身. 
 定义其他的方法print_s. </p>
-<pre><code class="language-python">class Student(object):
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
-    def __init__(self, name, score):
-        self.name = name
-        self.score = score
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
 
-    def print_s(self):
-        print('%s: %s' % (self.name, self.score))
+    <span class="k">def</span> <span class="nf">print_s</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">))</span>
 
-bart = Student('Bart', 90)
-bart.print_s()
-</code></pre>
+<span class="n">bart</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Bart&#39;</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+<span class="n">bart</span><span class="o">.</span><span class="n">print_s</span><span class="p">()</span>
+</code></pre></div>
 <pre><code>Bart: 90
 </code></pre>
 <p>如果要让内部属性不被外部访问, 可以在属性名称前加两个下划线. </p>
-<pre><code class="language-python">class Student1(object):
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student1</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
-    def __init__(self, name, score):
-        self.__name = name
-        self.__score = score
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__score</span> <span class="o">=</span> <span class="n">score</span>
 
-alan = Student1('alan', 60)
-alan.__name
-</code></pre>
+<span class="n">alan</span> <span class="o">=</span> <span class="n">Student1</span><span class="p">(</span><span class="s1">&#39;alan&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+<span class="n">alan</span><span class="o">.</span><span class="n">__name</span>
+</code></pre></div>
 <pre><code>---------------------------------------------------------------------------
 
 AttributeError                            Traceback (most recent call last)
@@ -424,8 +424,8 @@ AttributeError: 'Student1' object has no attribute '__name'
 <p>如果外部代码一定要获取不被外部访问的属性, 可以增加一个<code>get_name</code>和<code>get_score</code>这样的方法. 
 有些时候, 你会看到以一个下划线开头的实例变量名, 比如<code>_name</code>, 这样的实例变量外部是可以访问的, 但是, 按照约定俗成的规定, 当你看到这样的变量时, 意思就是, “虽然我可以被访问, 但是, 请把我视为私有变量, 不要随意访问”. </p>
 <p>继承的概念不算复杂, 主要就是子类自动拥有父类的方法, 并且继承有一个最大的好处就是多态. 要判断class的类型, 可以使用<code>isinstance()</code>方法. </p>
-<pre><code class="language-python">isinstance(bart, Student)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">isinstance</span><span class="p">(</span><span class="n">bart</span><span class="p">,</span> <span class="n">Student</span><span class="p">)</span>
+</code></pre></div>
 <pre><code>True
 </code></pre>
               

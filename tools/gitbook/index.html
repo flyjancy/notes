@@ -144,11 +144,11 @@
 <p>使用 NPM 安装 GitBook: <code>npm install gitbook -g</code></p>
 <h2 id="_1">项目结构</h2>
 <p>新建一个 GitHub 仓库, 克隆下来之后在根目录添加 <code>README.md</code> 和 <code>SUMMARY.md</code> 两个文件, 其中 <code>README.md</code> 是对书籍的简单介绍, <code>SUMMARY.md</code> 是书籍的目录结构, 内容格式大致如下:</p>
-<pre><code>* [Chapter1](chapter1/README.md)
+<div class="highlight"><pre><span></span><code>* [Chapter1](chapter1/README.md)
   * [Section1.1](chapter1/section1.1.md)
   * [Section1.2](chapter1/section1.2.md)
 * [Chapter2](chapter2/README.md)
-</code></pre>
+</code></pre></div>
 <p>创建这两个文件后使用 <code>gitbook init</code> 创建 <code>SUMMARY.md</code> 中的目录结构, 之后便可以开始专注于内容的编写.</p>
 <p>使用 <code>gitbook serve</code> 生成在线预览, 可以刷新浏览器界面实时追踪.</p>
 <p>使用 <code>gitbook build</code> 编译书籍, 之后可以打包发送或者通过 GitHub Pages 托管.</p>
@@ -176,7 +176,7 @@
 <p>为了美化 GitBook, 难免会使用各式各样的插件, 经过尝试学习了一种可行的方法, 记录于此.</p>
 <p>在上一节的步骤 4 以后, 在根目录下添加 <code>book.json</code> 文件 </p>
 <p>按照模版格式编辑(现在我用的插件如下)</p>
-<pre><code>{
+<div class="highlight"><pre><span></span><code>{
     &quot;plugins&quot;: [
         &quot;callouts&quot;,
         &quot;intopic-toc&quot;,
@@ -194,7 +194,7 @@
         }
     }
 }
-</code></pre>
+</code></pre></div>
 <p>之后再 build 即可.</p>
               
             </div>
