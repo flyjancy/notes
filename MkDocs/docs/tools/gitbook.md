@@ -42,7 +42,7 @@
 1. 在 GitHub 上新建一个仓库, 假设名为 test.
 2. Clone it. (目前是空的)
 3. 新建 `README.md` 和 `SUMMARY.md` 两个文件并按格式写好.
-4. `gitbook init`.
+4. `gitbook init`. (如果需要使用插件, 请见「使用插件」一节)
 5. `gitbook build`.
 6. 添加 `.gitignore`, 忽略 `_book` 文件夹(编译出来的 site, 不通过 main 分支管理).
 7. commit and push 到 main 分支, 通过 main 分支管理生成 book 的源代码.
@@ -85,5 +85,7 @@
     }
 }
 ```
+
+使用 `gitbook install` 安装相应的插件.
 
 之后再 build 即可.
