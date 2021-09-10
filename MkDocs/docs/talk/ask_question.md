@@ -90,4 +90,6 @@ RTFSC: Read the fucking source code
 
 ## 推荐阅读
 
-[如何有效地报告Bug](https://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)
+[如何有效地报告 Bug](https://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html)
+
+[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)

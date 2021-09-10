@@ -1,4 +1,4 @@
-site_name: Pastglory Docs
+site_name: Flyjancy Docs
 nav:
   - 主页: index.md
   - 数字设计与验证:
@@ -13,7 +13,7 @@ nav:
   - 杂谈:
     - 如何正确提问: talk/ask_question.md 
   - 关于: 
-    - Pastglory: about/pastglory.md
+    - Pastglory: about/flyjancy.md
 theme: readthedocs
 markdown_extensions:
   - admonition

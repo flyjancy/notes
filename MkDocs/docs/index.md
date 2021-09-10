@@ -1,14 +1,14 @@
-# Welcome to Pastglory Docs
+# Welcome to Flyjancy Docs
 
 ## 简介
 
-Pastglory Docs主要包含我的个人笔记, 涉及领域包括但不限于数字设计与验证, 程序设计与算法, 常用工具的使用. 同时也收录一些我认为很有用的talk内容.
+Flyjancy Docs主要包含我的个人笔记, 涉及领域包括但不限于数字设计与验证, 程序设计与算法, 常用工具的使用. 同时也收录一些我认为很有用的talk内容.
 
 ## 相关链接
 
 GitHub:
 
-[https://github.com/pastglory](https://github.com/pastglory)
+[https://github.com/flyjancy](https://github.com/flyjancy)
 
 知乎:
 
