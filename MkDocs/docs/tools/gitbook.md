@@ -1,10 +1,10 @@
 # GitBook使用简易指南
 
->Modern book format and toolchain using Git and Markdown
+> Modern book format and toolchain using Git and Markdown
 
 这是[GitBook项目主页](https://github.com/GitbookIO/gitbook)对它的定义.
 
->GitBook helps you publish beautiful docs for your users and centralize your teams' knowledge for advanced collaboration. 
+> GitBook helps you publish beautiful docs for your users and centralize your teams' knowledge for advanced collaboration. 
 
 这是[GitBook官网](https://www.gitbook.com)对其使用场景的描述.
 
@@ -89,3 +89,9 @@
 使用 `gitbook install` 安装相应的插件.
 
 之后再 build 即可.
+
+## 更多技巧
+
+美化 GitBook 的关键便在于 `book.json` 中的插件配置, 想要快速学习插件的配置, 需要去找插件的源代码来读, 有很多可以学习的精华. 
+
+同时, 参考他人优秀的 GitBook 实现也是必要的.

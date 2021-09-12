@@ -23,4 +23,4 @@ UESTC在读硕士, 研究方向为数字系统设计与验证.
 - 写作: Latex, Word/Excel/PowerPoint
 - 版本管理工具: Git
 - 英语: CET4(590), CET6(548)
-- 其他: Ubuntu, 数据结构
+- 其他: 熟练使用Ubuntu, 熟悉数据结构与算法
